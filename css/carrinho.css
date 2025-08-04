@@ -1,0 +1,20 @@
+
+
+.tabela {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.tabela th,
+.tabela td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 80vh;
+}

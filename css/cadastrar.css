@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 80vh;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.w50 {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+.box {
+    display: flex;
+    width: 930px;
+}
+
+.form_box {
+    background-color: rgba(211, 211, 211);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.form_box h2 {
+    font-size: 30px;
+}
+
+.form_box p {
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.form_box p a {
+    color: orange;
+    text-decoration: none;
+}
+
+.formulario {
+    margin: 20px 0;
+}
+
+.formulario .input_grupo {
+    margin-bottom: 15px;
+
+}
+
+.formulario .input_grupo label {
+    color: #3d3d3d;
+    font-size: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario .input_grupo input {
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+
+.formulario .input_grupo input:focus {
+    border-color: orange;
+}
+
+.formulario .input_grupo button {
+    width: 100%;
+    height: 47px;
+    background-color: orange;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.4s ease
+}
+
+.formulario .input_grupo button:hover {
+    background-color: orangered;
+    transition: all 0.4s ease
+}
+
+.error_message {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: inherit;
+    margin-left: 15px;
+
+}
+
+.requisito {
+    color: red;
+}
+
+/* Ajustes para espaçamento */
+.input_grupo {
+    margin-bottom: 25px;
+
+}
+
+
+.input_grupo input {
+    height: 57px;
+}
+
+
+@media (max-width:930px) {
+    .box {
+        width: 700px;
+    }
+
+    .form_box {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .w50 {
+        width: 100%;
+        padding: 0;
+    }
+}

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p>Royal</p>
+        </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-gradient nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar.html">Cadastro</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Joias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aneis.html">Anéis</a></li>
+                            <li><a class="dropdown-item" href="pulseiras.html">Pulseiras</a></li>
+                            <li><a class="dropdown-item" href="brincos.html">Brincos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link kartImg" href="carrinho.html">
+                            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                        <div id="cartItemCountPopup" class="cart-popup">0</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+
+
+        <div class="texto1 mt-3">
+            <p class="h2">BRINCOS ROYAL</p>
+            <p class="h6">BRINCOS FEMININOS E MASCULINOS</p>
+            <div class="linha"></div>
+        </div>
+
+        <div class="cardAneis mt-5">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoPop.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="Brinco1">Brinco Pop em Ouro Amarelo 18k com Pérola
+                        </h5>
+
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco1">790,00</span>
+                        </p>
+                        <p class="card-text opacity-75">10x sem juros de R$ 79,67</p>
+
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco1,preçoBrinco1)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoJade.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+
+                        <h5 class="card-title" id="Brinco2">Brinco Esperança em Prata 925 com Espinélios e Aventurina
+                        </h5>
+                        <p class="card-text h6 opacity-75" style="text-decoration: line-through;">R$ 1650,00</p>
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco2">990,00</span>
+                        </p>
+                        <p class="card-text opacity-75">10x sem juros de R$ 99,00</p>
+
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco2,preçoBrinco2)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoForza.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="Brinco3">Brinco Forza em Prata 925 com Ródio Negro
+                        </h5>
+
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco3">250,00</span>
+                        </p>
+                        <p class="card-text opacity-75">3x sem juros de R$ 83,33</p>
+
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco3,preçoBrinco3)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoPerola.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="Brinco4">Brinco em Prata 925 com Pérola e Quatzo Fumê
+                        </h5>
+                        <p class="card-text h6 opacity-75" style="text-decoration: line-through;">R$ 690,00</p>
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco4">552,00</span>
+                        </p>
+                        <p class="card-text opacity-75">7x sem juros de R$ 78,86</p>
+
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco4,preçoBrinco4)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+        </div>
+
+        <div class="cardAneis mt-5">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoRaise.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="Brinco5">Brinco Raise em Prata 925 com Topázio Incolores
+                        </h5>
+
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco5">690,00</span>
+                        </p>
+                        <p class="card-text opacity-75">9x sem juros de R$ 76,67</p>
+
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco5,preçoBrinco5)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoV.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="Brinco6">Brinco Argola V Love em Prata 925 com Safiras Negras
+                        </h5>
+
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco6">850,00</span>
+                        </p>
+                        <p class="card-text opacity-75">10x sem juros de R$ 85,00</p>
+
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco6,preçoBrinco6)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoDaisy.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="Brinco7">Brinco Daisy em Prata 925 com Safiras incolores
+                        </h5>
+                        <p class="card-text h6 opacity-75" style="text-decoration: line-through;">R$ 690,00</p>
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco7">483,00</span>
+                        </p>
+                        <p class="card-text opacity-75">6x sem juros de R$ 80,50</p>
+
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco7,preçoBrinco7)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../imagens/brincoNature.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="Brinco8">Brinco Nature em Prata 925
+                        </h5>
+                        <p class="card-text h6">
+                            <span>R$</span>
+                            <span id="preçoBrinco8">550,00</span>
+                        </p>
+                        <p class="card-text opacity-75">7x sem juros de R$ 78,57</p>
+                    </center>
+                </div>
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(Brinco8,preçoBrinco8)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+        </div>
+
+
+        <div class="cardTitulo mt-5">
+            <p class="h1">Escolha por Categoria</p>
+            <p class="h5">ENCONTRE A SUA FAVORITA</p>
+            <div class="linha"></div>
+        </div>
+
+        <div class="categoriasContainer">
+            <a href="aneis.html" class="categoriasTitulo" id="catAneis">
+                <div>
+                    <div class="categorias"><img src="../imagens/aneis.webp" alt=""></div>
+                    <p class="mt-1">Anéis</p>
+                </div>
+            </a>
+
+            <a href="pulseiras.html" class="categoriasTitulo" id="catPulseiras">
+                <div>
+                    <div class="categorias"><img src="../imagens/pulseiras.webp" alt=""></div>
+                    <p class="mt-1"> Pulseiras</p>
+                </div>
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+
+    <footer class="mt-5">
+
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Royal</h1>
+                <p>Its all about your dreams.</p>
+
+                <div id="footer_social_media">
+                    <a href="" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright" class="bg-gradient">
+            &#169
+            2024 all rights reserved
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="../javascript/index.js"></script>
+
+
+</body>
+
+</html>

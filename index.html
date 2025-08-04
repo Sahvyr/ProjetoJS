@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto Js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p>Royal</p>
+        </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-gradient nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/cadastrar.html">Cadastro</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Joias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="html/aneis.html">Anéis</a></li>
+                            <li><a class="dropdown-item" href="html/pulseiras.html">Pulseiras</a></li>
+                            <li><a class="dropdown-item" href="html/brincos.html">Brincos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link kartImg" href="html/carrinho.html">
+                            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                        <div id="cartItemCountPopup" class="cart-popup">0</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="carrossel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Imagens/fashion-beauty-concept-elegant-woman-with-red-lips-black-dress-showing-earrings-jewelry-whit.jpg"
+                            class="d-block w-100-height" alt="img1">
+                        <div class="carousel-caption carousel1">
+                            <h5 class="texto_carrossel">Brilho, glamour <br> sofisticação garantidos</h5>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <img src="imagens/waistup-shot-elegant-goodlooking-wealthy-young-blond-woman-brilliant-accessorize-silver-glitterin.jpg"
+                            class="d-block w-100-height" alt="img2">
+                        <div class="carousel-caption carousel1">
+                            <h5 class="texto_carrossel">Encante-se <br>com nossa coleção</h5>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <img src="imagens/saeed-anahid--GhLgB-oXNw-unsplash.jpg" class="d-block w-100-height"
+                            alt="img3">
+                        <div class="carousel-caption carousel1">
+                            <h5 class="texto_carrossel">Charme em cada jóia</h5>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="texto1 mt-4">
+            <p class="h3">Tesouros Deslumbrantes: Embrace a Elegância Intemporal</p>
+            <p class="h5">Descubra a beleza atemporal que brilha através de cada peça, uma expressão de elegância e
+                sofisticação
+                que transcende o tempo.</p>
+        </div>
+
+        <center>
+            <div class="cardPai">
+
+                <div class="cards" id="card1"></div>
+
+                <div class="cards" id="card2"></div>
+
+                <div class="cards" id="card3"></div>
+
+                <div class="cards" id="card4"></div>
+        </center>
+
+
+        <div class="cardTitulo mt-3">
+            <p class="h1">Refinamento e Encanto</p>
+            <p class="h5">Explore Nossa Coleção de Anéis</p>
+            <div class="linha"></div>
+        </div>
+
+
+        <div class="cardAneis card-deck">
+
+            <div class="card" style="width: 18rem;">
+                <img src="imagens/https __lojavivara.vtexassets.com_arquivos_ids_710675_Anel-Origem-em-Prata-925-com-Rodio-Negro-89159_hover.webp"
+                    class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="anel1">Anel Origem em Prata 925 com Ródio negro</h5>
+                        <p class="card-text h6">
+                            <span>R$ </span>
+                            <span id="preçoAnel1">290,00</span>
+                        </p>
+                        <p class="card-text opacity-75">3x sem juros de R$ 96,67</p>
+                    </center>
+                </div>
+
+                <center><button class="btn btn-secondary mb-3" onclick="armazenarItem(anel1,preçoAnel1)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="imagens/icona.webp" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="anel2">Anel Icona Man em Prata 925 com Ouro Amarelo 18k</h5>
+                        <p class="card-text h6"> <span>R$</span>
+                            <span id="preçoAnel2">1590,00</span>
+                        </p>
+                        <p class="card-text opacity-75">10x sem juros de R$ 159,00</p>
+                    </center>
+                </div>
+
+                <center><button class="btn btn-secondary mb-3" onclick="armazenarItem(anel2,preçoAnel2)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="imagens/skye.webp" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="anel3">Anel Sky em Prata 925 com Topázio Sky e Topázios Incolores
+                        </h5>
+                        <p class="card-text h6 opacity-75" style="text-decoration: line-through;">R$ 1.050,00</p>
+                        <p class="card-text h6"> <span>R$</span>
+                            <span id="preçoAnel3">840,00</span>
+                        </p>
+                        <p class="card-text opacity-75">10x sem juros de R$ 84,00</p>
+                    </center>
+                </div>
+
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(anel3,preçoAnel3)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="imagens/nature.webp" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" id="anel4">Anel Nature em Prata 925</h5>
+                        <p class="card-text h6"> <span>R$</span>
+                            <span id="preçoAnel4">450,00</span>
+                        </p>
+                        <p class="card-text opacity-75">6x sem juros de R$ 75,00</p>
+                    </center>
+                </div>
+
+                <center>
+                    <button class="btn btn-secondary mb-3" onclick="armazenarItem(anel4,preçoAnel4)">Adicionar no
+                        carrinho</button>
+                </center>
+            </div>
+        </div>
+
+
+
+        <div class="cardTitulo mt-3">
+            <p class="h1">Escolha por Categoria</p>
+            <p class="h5">ENCONTRE A SUA FAVORITA</p>
+            <div class="linha"></div>
+        </div>
+
+        <div class="categoriasContainer">
+            <a href="html/aneis.html" class="categoriasTitulo" id="catAneis">
+                <div>
+                    <div class="categorias"><img src="imagens/aneis.webp" alt=""></div>
+                    <p class="mt-1">Anéis</p>
+                </div>
+            </a>
+
+            <a href="html/pulseiras.html" class="categoriasTitulo" id="catPulseiras">
+                <div>
+                    <div class="categorias"><img src="imagens/pulseiras.webp" alt=""></div>
+                    <p class="mt-1"> Pulseiras</p>
+                </div>
+            </a>
+
+            <a href="html/brincos.html" class="categoriasTitulo">
+                <div>
+                    <div class="categorias"><img src="imagens/brincos.webp" alt=""></div>
+                    <p class="mt-1">Brincos</p>
+                </div>
+            </a>
+        </div>
+
+    </main>
+
+
+    <footer class="mt-5">
+
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Royal</h1>
+                <p>Its all about your dreams.</p>
+
+                <div id="footer_social_media">
+                    <a href="" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright" class="bg-gradient">
+            &#169
+            2024 all rights reserved
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="javascript/index.js"></script>
+
+
+</body>
+
+</html>
